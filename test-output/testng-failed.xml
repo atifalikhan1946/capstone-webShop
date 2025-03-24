@@ -4,15 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testPages.RegisterTest">
+      <class name="testPages.CheckoutTest">
         <methods>
-          <include name="closeDown"/>
+          <include name="closeDownbrowser"/>
+          <include name="UpdateCartList"/>
           <include name="setUp"/>
-          <include name="testUserRegistration"/>
-          <include name="testUserLogin"/>
-          <include name="testingthecart"/>
         </methods>
-      </class> <!-- testPages.RegisterTest -->
+      </class> <!-- testPages.CheckoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

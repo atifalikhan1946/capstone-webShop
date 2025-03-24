@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-22T14:50:40 IST" name="Suite" finished-at="2025-03-22T14:51:01 IST" duration-ms="20672">
+  <suite started-at="2025-03-24T18:23:33 IST" name="Suite" finished-at="2025-03-24T18:24:16 IST" duration-ms="42286">
     <groups>
     </groups>
-    <test started-at="2025-03-22T14:50:40 IST" name="Test" finished-at="2025-03-22T14:51:01 IST" duration-ms="20672">
+    <test started-at="2025-03-24T18:23:33 IST" name="Test" finished-at="2025-03-24T18:24:16 IST" duration-ms="42286">
       <class name="testPages.CartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testPages.CartTest@2c767a52]" started-at="2025-03-22T14:50:40 IST" name="setUp" finished-at="2025-03-22T14:50:48 IST" duration-ms="8304" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testPages.CartTest@2c767a52]" started-at="2025-03-24T18:23:33 IST" name="setUp" finished-at="2025-03-24T18:23:40 IST" duration-ms="6644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testingthecart()[pri:2, instance:testPages.CartTest@2c767a52]" started-at="2025-03-22T14:50:48 IST" name="testingthecart" finished-at="2025-03-22T14:50:59 IST" duration-ms="10785" status="PASS">
+        <test-method signature="testingthecart()[pri:2, instance:testPages.CartTest@2c767a52]" started-at="2025-03-24T18:23:40 IST" name="testingthecart" finished-at="2025-03-24T18:24:15 IST" duration-ms="34700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingthecart -->
-        <test-method is-config="true" signature="closeDownbrowser()[pri:0, instance:testPages.CartTest@2c767a52]" started-at="2025-03-22T14:50:59 IST" name="closeDownbrowser" finished-at="2025-03-22T14:51:01 IST" duration-ms="1527" status="PASS">
+        <test-method is-config="true" signature="closeDownbrowser()[pri:0, instance:testPages.CartTest@2c767a52]" started-at="2025-03-24T18:24:15 IST" name="closeDownbrowser" finished-at="2025-03-24T18:24:16 IST" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDownbrowser -->

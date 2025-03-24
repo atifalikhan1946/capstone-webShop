@@ -13,6 +13,8 @@ import utilities.ReportManager;
 
 public class CartTest extends BaseClass {
     CartPage1 cartpage;
+    
+    
 
     @BeforeMethod
     @Parameters("browser")
