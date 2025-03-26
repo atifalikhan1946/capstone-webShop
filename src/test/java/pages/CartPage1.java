@@ -116,6 +116,7 @@ public class CartPage1 extends BaseClass {
 			ReportManager.getTest().log(Status.INFO, "Entered Password");
 			driver.findElement(loginButton).click();
 			ReportManager.getTest().pass("Login Successful");
+			System.out.println("Login successful");
 
 			ReportManager.createTest("Add Books to Cart"); // Starting the report
 			driver.findElement(Books).click();
@@ -124,6 +125,7 @@ public class CartPage1 extends BaseClass {
 			ReportManager.getTest().pass("First Product Added to Cart");
 			driver.findElement(shoppingcart).click();
 			ReportManager.getTest().pass("Successfully Entered Shopping Cart");
+			System.out.println("Entered into cart successful");
 			
 			
 			ReportManager.createTest("CartListUpdate");// starting report
@@ -150,6 +152,7 @@ public class CartPage1 extends BaseClass {
 			ReportManager.getTest().log(Status.INFO, "marked the checkbox");
 			driver.findElement(updateCart).click();
 			ReportManager.getTest().pass("Clicked on update the cart");
+			System.out.println("Updated the cart successful");
 			
 			
 			
@@ -209,6 +212,7 @@ public class CartPage1 extends BaseClass {
 			Thread.sleep(2000);
 			driver.findElement(confirm).click();
 			ReportManager.getTest().log(Status.INFO, "Clicked on continue");
+			System.out.println("Checkout successful");
 			
 			
 			
@@ -229,6 +233,7 @@ public class CartPage1 extends BaseClass {
 			Thread.sleep(2000);
 			JavascriptExecutor js2 = (JavascriptExecutor) driver;
 			js2.executeScript("window.scrollBy(0, 200);");
+			System.out.println("Checked the Details of product");
 			
 			
 			
@@ -252,7 +257,9 @@ public class CartPage1 extends BaseClass {
 			ReportManager.getTest().log(Status.INFO, "Clicked on Login link");
 //			no elements added
 			driver.findElement(loginButton).click();
+			Thread.sleep(2000);
 			ReportManager.getTest().pass(" Login failed!");
+			System.out.println("Login Failed");
 
 
 		} catch (Exception e) {
