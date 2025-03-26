@@ -1,16 +1,21 @@
 package base; // Package Declaration
 
 //Importing File Class for handling files
-import java.io.File; 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
 import com.google.common.io.Files;
+
 import utilities.ConfigReader;
 
 public class BaseClass {
@@ -46,6 +51,52 @@ public class BaseClass {
     public static void closeBrowser() {// Method to close the browser
         if (driver != null) { // check if driver is initialised
             driver.quit(); // Quit browser if driver is not null
+        }
+    }
+    
+    @BeforeSuite
+    public void clearAllureResults() {
+    	String[] allurePaths = {"allure-results", "/allure-results/"};
+
+        for (String path : allurePaths) {
+            File allureResults = new File(path);
+            if (allureResults.exists() && allureResults.isDirectory()) {
+                for (File file : allureResults.listFiles()) {
+                    file.delete();
+                }
+            }
+        }
+    }
+
+    // Generate Allure Report after test execution (Runs in Background)
+    @AfterSuite
+    public void generateAllureReport() 
+    {
+
+        
+        try 
+        {
+            ProcessBuilder reportBuilder = new ProcessBuilder("cmd.exe", "/c", "mvn allure:report");
+            reportBuilder.redirectErrorStream(true);
+            Process reportProcess = reportBuilder.start();
+            reportProcess.waitFor(); // Wait until report is generated
+
+            String reportPath = System.getProperty("user.dir") + "/allure-results/";
+            File reportDir = new File(reportPath);
+
+            if (reportDir.exists() && reportDir.isDirectory()) 
+            {
+                System.out.println("Allure Report generated successfully in: " + reportPath);
+            } 
+            else 
+            {
+                System.out.println("Allure Report generation failed. Check Maven logs.");
+            }
+
+        } 
+        catch (IOException | InterruptedException e) 
+        {
+            e.printStackTrace();
         }
     }
 }
