@@ -105,6 +105,7 @@ public class CartPage1 extends BaseClass {
 			ReportManager.getTest().log(Status.INFO, "ReEntered The Password");
 			driver.findElement(registerButton).click();
 			ReportManager.getTest().pass("Registratin Successful");
+			System.out.println("registration successful");
 
 			ReportManager.createTest("login-Functionality"); // Starting the report
 			driver.findElement(loginLink).click();
