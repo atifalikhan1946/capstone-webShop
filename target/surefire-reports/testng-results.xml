@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-26T13:11:18 IST" name="Suite" finished-at="2025-03-26T13:12:06 IST" duration-ms="47767">
+  <suite started-at="2025-03-26T13:16:43 IST" name="Suite" finished-at="2025-03-26T13:17:41 IST" duration-ms="58199">
     <groups>
     </groups>
-    <test started-at="2025-03-26T13:11:18 IST" name="Test" finished-at="2025-03-26T13:12:06 IST" duration-ms="47767">
+    <test started-at="2025-03-26T13:16:43 IST" name="Test" finished-at="2025-03-26T13:17:41 IST" duration-ms="58199">
       <class name="testPages.CartTest">
-        <test-method is-config="true" signature="clearAllureResults()[pri:0, instance:testPages.CartTest@2fb3536e]" started-at="2025-03-26T13:11:18 IST" name="clearAllureResults" finished-at="2025-03-26T13:11:18 IST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="clearAllureResults()[pri:0, instance:testPages.CartTest@3232a28a]" started-at="2025-03-26T13:16:43 IST" name="clearAllureResults" finished-at="2025-03-26T13:16:43 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAllureResults -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testPages.CartTest@2fb3536e]" started-at="2025-03-26T13:11:18 IST" name="setUp" finished-at="2025-03-26T13:11:28 IST" duration-ms="9940" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testPages.CartTest@3232a28a]" started-at="2025-03-26T13:16:43 IST" name="setUp" finished-at="2025-03-26T13:16:57 IST" duration-ms="13894" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testingthecart()[pri:2, instance:testPages.CartTest@2fb3536e]" started-at="2025-03-26T13:11:28 IST" name="testingthecart" finished-at="2025-03-26T13:12:04 IST" duration-ms="35840" status="PASS">
+        <test-method signature="testingthecart()[pri:2, instance:testPages.CartTest@3232a28a]" started-at="2025-03-26T13:16:57 IST" name="testingthecart" finished-at="2025-03-26T13:17:38 IST" duration-ms="40921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingthecart -->
-        <test-method is-config="true" signature="closeDownbrowser()[pri:0, instance:testPages.CartTest@2fb3536e]" started-at="2025-03-26T13:12:04 IST" name="closeDownbrowser" finished-at="2025-03-26T13:12:06 IST" duration-ms="1777" status="PASS">
+        <test-method is-config="true" signature="closeDownbrowser()[pri:0, instance:testPages.CartTest@3232a28a]" started-at="2025-03-26T13:17:38 IST" name="closeDownbrowser" finished-at="2025-03-26T13:17:41 IST" duration-ms="3031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDownbrowser -->
-        <test-method is-config="true" signature="generateAllureReport()[pri:0, instance:testPages.CartTest@2fb3536e]" started-at="2025-03-26T13:12:06 IST" name="generateAllureReport" finished-at="2025-03-26T13:12:16 IST" duration-ms="10192" status="PASS">
+        <test-method is-config="true" signature="generateAllureReport()[pri:0, instance:testPages.CartTest@3232a28a]" started-at="2025-03-26T13:17:41 IST" name="generateAllureReport" finished-at="2025-03-26T13:17:50 IST" duration-ms="8932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateAllureReport -->
